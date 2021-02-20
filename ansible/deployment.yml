@@ -54,7 +54,7 @@
 
     - name: Add user ec2-user to docker group
       user:
-        name: ec2-ser
+        name: ec2-user
         groups: docker
         append: yes
       become: yes
@@ -64,5 +64,5 @@
       become: yes
 
     - name: Run docker_container
-      shell: docker run -it -d --name node_js -p8081:8080 crycrime/devops_adv:latest
+      shell: docker run -it -d --name node_js -p80:8080 crycrime/devops_adv:latest
       become: yes
