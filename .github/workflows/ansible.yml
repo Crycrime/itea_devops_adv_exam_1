@@ -3,7 +3,7 @@ name: 'AWS Ansible'
 on:
   workflow_run:
     workflows:
-      - aws
+      - Terraform AWS
     types:
       - completed
     branches:
@@ -43,13 +43,3 @@ jobs:
           playbookName: 'ansible/deployment.yml'
           inventoryFile: 'ansible/hosts'
           keyFile: 'ansible/key.pem'
-
-      - name: itea_exam_1
-        uses: actions/checkout@v2
-        docker_container:
-          name: node-js
-          image: crycrime/devops_adv
-          pull: true
-          state: started
-          ports:
-            - "80:8080"

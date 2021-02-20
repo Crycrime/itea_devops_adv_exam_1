@@ -58,3 +58,12 @@
         groups: docker
         append: yes
       become: yes
+
+    - name: node-js-up
+      docker_container:
+        name: node-js
+        image: crycrime/devops_adv:latest
+        pull: true
+        state: started
+        ports:
+          - "80:8080"
