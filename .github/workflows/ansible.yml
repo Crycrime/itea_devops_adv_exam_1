@@ -1,4 +1,4 @@
-name: 'aws'
+name: 'aws ansible'
 
 on:
   workflow_run:

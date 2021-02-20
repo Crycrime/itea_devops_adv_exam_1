@@ -67,7 +67,7 @@ jobs:
 
       - name: Terraform Output
         id: output
-        run: terraform output > ../terraform.output
+        run: terraform output > ./terraform.output
 
       - name: Upload actifacts
         uses: actions/upload-artifact@v2
