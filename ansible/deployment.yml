@@ -64,5 +64,5 @@
       become: yes
 
     - name: Run docker_container
-      shell: docker run -it -d --name node_js -p8081:8080 crycrime/node_js:latest
+      shell: docker run -it -d --name node_js -p8081:8080 crycrime/devops_adv:latest
       become: yes
