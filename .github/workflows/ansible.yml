@@ -24,7 +24,7 @@ jobs:
           github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: aws.yml
           workflow_conclusion: success
-          name: terraform
+          name: aws
 
       - id: host
         env:
