@@ -3,4 +3,4 @@ ansible_user=ec2-user
 ansible_python_interpreter=/usr/bin/python3
 
 [all]
-ec2 ansible_host=
+ansible_host=
