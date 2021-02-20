@@ -45,6 +45,7 @@ jobs:
           keyFile: 'ansible/key.pem'
 
       - name: itea_exam_1
+        uses: actions/checkout@v2
         docker_container:
           name: node-js
           image: crycrime/devops_adv
