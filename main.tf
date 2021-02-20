@@ -60,7 +60,7 @@ resource "aws_security_group" "ansible_db_sg" {
 }
 
 resource "aws_instance" "ec2_ansible" {
-  ami                    = "ami-098828924dc89ea4a" #Amazon Linux 2 AMI (HVM)
+  ami                    = "ami-06178cf087598769c" #Amazon Linux 2 AMI (HVM)
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ansible_sg.id]
   key_name               = "exam_project"
