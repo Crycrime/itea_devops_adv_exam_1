@@ -2,6 +2,8 @@
   gather_facts: false
   hosts: [all]
   become: yes
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
 
   tasks:
     - name: Install yum utils
@@ -67,4 +69,4 @@
         state: started
         ports:
           - "80:8080"
-      become: yes    
+      become: yes
