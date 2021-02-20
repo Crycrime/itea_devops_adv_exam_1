@@ -6,31 +6,31 @@
   tasks:
     - name: Install yum utils
       yum:
-        use_backend: yum
+        use_backend: dnf
         name: yum-utils
         state: latest
 
     - name: Install device-mapper-persistent-data
       yum:
-        use_backend: yum
+        use_backend: dnf
         name: device-mapper-persistent-data
         state: latest
 
     - name: Install iptables
       yum:
-        use_backend: yum
+        use_backend: dnf
         name: iptables
         state: latest
 
     - name: Install lvm2
       yum:
-        use_backend: yum
+        use_backend: dnf
         name: lvm2
         state: latest
 
     - name: Install python3
       yum:
-        use_backend: yum
+        use_backend: dnf
         name: python3
         state: latest
 
