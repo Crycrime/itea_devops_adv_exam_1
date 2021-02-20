@@ -63,10 +63,10 @@ resource "aws_instance" "ec2_ansible" {
   ami                    = "ami-0e80a462ede03e653" #Amazon Linux 2 AMI (HVM)
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ansible_sg.id]
-  key_name               = "terraform_for"
+  key_name               = "exam_project"
 
   tags = {
-    Name = "Instance with wordpress"
+    Name = "Instance for ansible"
   }
 }
 
