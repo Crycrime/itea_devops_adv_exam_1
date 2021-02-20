@@ -1,9 +1,9 @@
-name: 'AWS Ansible'
+name: 'aws'
 
 on:
   workflow_run:
     workflows:
-      - Terraform AWS
+      - aws
     types:
       - completed
     branches:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   node:
-    name: 'AWS Ansible'
+    name: 'aws'
     runs-on: ubuntu-latest
     steps:
 

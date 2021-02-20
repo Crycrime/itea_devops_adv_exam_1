@@ -8,7 +8,7 @@ on:
 
 jobs:
   terraform:
-    name: 'Terraform AWS'
+    name: 'aws'
     runs-on: ubuntu-latest
     steps:
 
@@ -72,5 +72,5 @@ jobs:
       - name: Upload actifacts
         uses: actions/upload-artifact@v2
         with:
-          name: terraform
+          name: aws
           path: terraform.output
