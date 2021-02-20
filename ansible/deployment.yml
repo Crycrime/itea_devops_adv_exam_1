@@ -4,7 +4,7 @@
   become: yes
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    use_backend: yum
+    use_backend: /usr/bin/yum
 
   tasks:
     - name: Install yum utils
